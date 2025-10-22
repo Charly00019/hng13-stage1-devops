@@ -1,8 +1,0 @@
-2025-10-22 04:18:48 [INFO] [0;34mCollecting deployment parameters...[0m
-2025-10-22 04:20:00 [OK] [0;32m✅ All parameters collected and validated[0m
-2025-10-22 04:20:00 [INFO] [0;34mSetting up repository...[0m
-2025-10-22 04:20:03 [OK] [0;32m✅ Repository setup completed[0m
-2025-10-22 04:20:03 [INFO] [0;34mPerforming network connectivity checks...[0m
-2025-10-22 04:20:04 [WARN] [1;33m⚠️  Ping test failed - continuing with SSH test...[0m
-2025-10-22 04:20:04 [ERR] [0;31m❌ Cannot reach SSH port 22 on 54.225.2.177[0m
-2025-10-22 04:20:04 [ERR] [0;31m❌ Check firewall rules and security groups[0m
