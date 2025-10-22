@@ -1,7 +1,7 @@
 #!/bin/bash
 # ============================================
 # HNG Stage 1 DevOps Task – Automated Deployment Script
-# Author: Charlotte Walternerve
+# Author: Andrews Obeng Agyemang
 # Version: 1.1.0
 # ============================================
 
@@ -53,13 +53,13 @@ prompt_secret() {
 # === 1️⃣ Collect Parameters ===
 collect_params() {
   info "Collecting parameters..."
-  prompt "Git Repository URL" GIT_REPO validate_url "https://github.com/Charly00019/todo-api.git"
+  prompt "Git Repository URL" GIT_REPO validate_url 
   prompt_secret "Personal Access Token" PAT 
-  prompt "Branch name" BRANCH ":" "main"
-  prompt "SSH Username" SSH_USER ":" "ubuntu"
-  prompt "Server IP address" SERVER_IP validate_ip "54.225.2.177"
-  prompt "SSH key path" SSH_KEY validate_key "/c/Users/Gevey/HNG/sshkey.pem"
-  prompt "Application port" APP_PORT validate_port "8000"
+  prompt "Branch name" BRANCH ":"  "main"
+  prompt "SSH Username" SSH_USER ":"
+  prompt "Server IP address" SERVER_IP validate_ip 
+  prompt "SSH key path" SSH_KEY validate_key 
+  prompt "Application port" APP_PORT validate_port 
   REPO_NAME=$(basename "$GIT_REPO" .git)
   REMOTE="$SSH_USER@$SERVER_IP"
 }
